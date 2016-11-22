@@ -11,11 +11,11 @@
 // about supported directives.
 //
 // require jquery
-//= require jquery_ujs
 //= require jquery311
 //= require jquery.turbolinks
 //= require moment
 //= require fusionlib
 //= require turbolinks
-//= require actions
+//= require serviceable
+//= require jquery_ujs
 // require_tree .
