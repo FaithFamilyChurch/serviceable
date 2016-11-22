@@ -31,7 +31,6 @@ $(document).ready(function(){
 	$(window).on('resize', function(){
 		screenClass();
 	});
-});
 
 // Adds and removes body class depending on screen width.
 function screenClass() {
