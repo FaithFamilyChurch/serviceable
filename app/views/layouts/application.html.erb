@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Serviceable</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:700">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-	<!-- begin sidebar code -->
-	<%= render 'shared/sidebar_nav' %>
-	<!-- end sidebar code -->
+	<head>
+		<title>Serviceable</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:700">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<!-- begin sidebar code -->
+		<%= render 'shared/sidebar_nav' %>
+		<!-- end sidebar code -->
 
-	<%= yield %>
+		<%= yield %>
 
-</body>
+	</body>
 </html>

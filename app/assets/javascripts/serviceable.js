@@ -30,7 +30,9 @@ $(document).ready(function(){
 	// And recheck if window gets resized.
 	$(window).on('resize', function(){
 		screenClass();
+});
 	});
+
 
 // Adds and removes body class depending on screen width.
 function screenClass() {
@@ -40,4 +42,3 @@ function screenClass() {
 		$('.panel1').removeClass('scale-step-1');
 	}
 }
-
