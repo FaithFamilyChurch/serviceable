@@ -29,8 +29,17 @@ $(document).ready(function(){
 
 	// And recheck if window gets resized.
 	$(window).on('resize', function(){
+	});
+
+	jQuery.each(jQuery('textarea[data-autoresize]'), function() {
+		var offset = this.offsetHeight - this.clientHeight;
+		var resizeTextarea = function(el) {
+			jQuery(el).css('height', 'auto').css('height', el.scrollHeight + offset);
+		};
+		jQuery(this).on('keyup input', function() { resizeTextarea(this); }).removeAttr('data-autoresize');
+	});
+
 		screenClass();
-});
 	});
 
 

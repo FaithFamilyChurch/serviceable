@@ -1,0 +1,111 @@
+<div class="workspace one wide">
+
+	<div class="panel full-page-panel" id="add-song">
+		<div class="panelHeader">
+			<span class="label">
+				<i class="zmdi zmdi-plus" style="font-size:18px; margin-right:10px;"></i>
+				Add song
+			</span>
+			<div class="panelHeaderActionIcon">
+				<i class="zmdi zmdi-more"></i>
+			</div>
+		</div>
+		<div class="scroll-section">
+
+			<div class="panelsection">
+				<div class="panelSectionTitle">Details</div>
+				<div class="row">
+					<div class="col col-66">
+						<label class="normal">Song Name</label> 
+						<span class="pull-left"><input type="text" name="songName" placeholder="Enter a song name here" id="songName" /></span>
+					</div>
+					<div class="col col-33">
+						<label class="normal">Author</label> 
+						<span class="pull-left"><input type="text" name="songAuthor" id="songAuthor" /></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-20">
+						<label class="normal">Song Key</label> 
+						<span class="pull-left dropdown"><input type="text" name="songKey" placeholder="" id="songKey"/></span>
+					</div>
+					<div class="col col-20">
+						<label class="normal">Capo Key 1</label> 
+						<span class="pull-left dropdown"><input type="text" name="capoKey1" placeholder="" id="capoKey1"/></span>
+					</div>
+					<div class="col col-20">
+						<label class="normal">Capo Pos. 1 </label> 
+						<span class="pull-left dropdown"><input type="text" name="capoPos1" placeholder="" id="capoPos1"/></span>
+					</div>
+					<div class="col col-20">
+						<label class="normal">Capo Key 2</label> 
+						<span class="pull-left dropdown"><input type="text" name="capoKey2" placeholder="" id="capoKey2"/></span>
+					</div>
+					<div class="col col-20">
+						<label class="normal">Capo Pos. 2</label> 
+						<span class="pull-left dropdown"><input type="text" name="capoPos2" placeholder="" id="capoPos2"/></span>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="panelsection">
+				<div class="panelSectionTitle">Media</div>
+				<div class="row">
+					<div class="col col-80">
+						<label class="normal">Youtube URL</label> 
+						<span class="pull-left"><input type="text" name="songYoutubeLink" placeholder="Paste Youtube video URL here..." id="songYoutubeLink" /></span>
+					</div>
+					<div class="col col-20">
+						<label class="normal">Youtube Key</label> 
+						<span class="pull-left dropdown"><input type="text" name="youtubeKey" placeholder="" id="youtubeKey"/></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-33">
+						<label class="normal">Chord Chart</label> 
+						<span class="pull-left"><input type="text" name="chordChart" placeholder="Enter filename..." id="chordChart" /></span>
+					</div>
+					<div class="col col-33">
+						<label class="normal">Capo 1 Chart</label> 
+						<span class="pull-left"><input type="text" name="capo1ChordChart" placeholder="Enter filename..." id="capo1ChordChart" /></span>
+					</div>
+					<div class="col col-33">
+						<label class="normal">Capo 2 Chart</label> 
+						<span class="pull-left"><input type="text" name="capo2ChordChart" placeholder="Enter filename..." id="capo2ChordChart" /></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-33">
+						<label class="normal">Sheet Music</label> 
+						<span class="pull-left"><input type="text" name="sheetMusic" placeholder="Enter filename..." id="sheetMusic" /></span>
+					</div>
+					<div class="col col-33">
+						<label class="normal">Trumpet Music</label> 
+						<span class="pull-left"><input type="text" name="trumpetMusic" placeholder="Enter filename..." id="trumpetMusic" /></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-50">
+						<label class="normal">Song Lyrics</label> 
+						<textarea type="text" name="songLyrics" placeholder="Paste song lyrics here..." id="songLyrics" data-autoresize rows="2"></textarea>
+					</div>
+					<div class="col col-50">
+						<label class="normal">Comments</label> 
+						<textarea type="text" name="songComments" placeholder="" id="songComments" data-autoresize rows="2"></textarea>
+					</div>						
+				</div>
+			</div>
+		</div>
+		<div class="panel-footer">
+			<div class="panelActionButtons">
+				<button>
+					Cancel
+				</button>
+				<button class="primary">
+					Add Song
+				</button>
+			</div>
+		</div>			
+	</div>
+</div>

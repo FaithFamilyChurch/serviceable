@@ -2,17 +2,16 @@
 	<div class="logo">
 		<img class="logo-img" src="assets/logo_v2.png" style="width:100%; height:auto;">
 		<img class="logo-img-tiny" src="assets/logo_tiny.png" style="width:100%; height:auto;">
-<!-- 	SERVICE<span style="letter-spacing:-2px;">ABLE</span> -->
 	</div>
 
-	<div class="menu">
-		<a>Home</a>
+	<div class="menu" id="menu">
+			<a>Home</a>
 		<sub>
-			<a>This Week</a>
+			<a href="<%= root_url %>">This Week</a>
 		</sub>
 		<a>Admin</a>
 		<sub>
-			<a class="menu-priority admin">Add Song<i class="zmdi zmdi-key zmdi-hc-lg"></i></a>
+			<a class="menu-priority admin" href="songs">Add Song<i class="zmdi zmdi-key zmdi-hc-lg"></i></a>
 			<a class="menu-priority admin">Add Schedule<i class="zmdi zmdi-key zmdi-hc-lg"></i></a>
 			<a class="menu-priority admin">Manage Members<i class="zmdi zmdi-key zmdi-hc-lg"></i></a>
 			<a class="menu-priority admin">Manage Guests<i class="zmdi zmdi-key zmdi-hc-lg"></i></a>
@@ -50,6 +49,7 @@
 			<a>Contact Us</a>
 		</sub>
 	</div>
+
 	<div class="userAccountHeaderBar">
 		Welcome Randy <br><a href="#">Logout</a><a href="#">Settings</a>
 		<div class="avatar"></div>
