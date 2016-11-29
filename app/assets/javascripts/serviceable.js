@@ -1,5 +1,5 @@
-
 $(document).ready(function(){
+
 	$('.chat-notification-icon').click(function(){
 		$('.chat-notification-icon').toggleClass('active');
 		$('.right-sidebar').toggleClass('hidden');
@@ -25,12 +25,7 @@ $(document).ready(function(){
 		$('.test-loading-toggle').fadeToggle("fast","linear");
 	});
 
-	screenClass();
-
-	// And recheck if window gets resized.
-	$(window).on('resize', function(){
-	});
-
+	//   Textarea Resize
 	jQuery.each(jQuery('textarea[data-autoresize]'), function() {
 		var offset = this.offsetHeight - this.clientHeight;
 		var resizeTextarea = function(el) {
@@ -39,9 +34,15 @@ $(document).ready(function(){
 		jQuery(this).on('keyup input', function() { resizeTextarea(this); }).removeAttr('data-autoresize');
 	});
 
+	// Fire.
+	screenClass();
+
+	// And recheck if window gets resized.
+	$(window).bind('resize',function(){
 		screenClass();
 	});
 
+});
 
 // Adds and removes body class depending on screen width.
 function screenClass() {
