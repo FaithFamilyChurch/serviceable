@@ -38,7 +38,7 @@ $(document).ready(function(){
 	screenClass();
 
 	// And recheck if window gets resized.
-	$(window).bind('resize',function(){
+	$(window).on('resize',function(){
 		screenClass();
 	});
 
