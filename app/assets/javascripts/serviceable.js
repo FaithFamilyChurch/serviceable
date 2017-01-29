@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 
 	$('.chat-notification-icon').click(function(){
@@ -41,7 +43,6 @@ $(document).ready(function(){
 	$(window).on('resize',function(){
 		screenClass();
 	});
-
 });
 
 // Adds and removes body class depending on screen width.
