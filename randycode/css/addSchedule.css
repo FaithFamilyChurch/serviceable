@@ -1,0 +1,89 @@
+/* Add Schedule */
+
+#schedule-preview {
+	min-width:470px;
+	width: calc(100% - 720px);
+	height:calc(100% - 80px);
+	max-width: 1100px;
+	left: 0;
+	right: 600px;
+	margin: auto;
+}
+
+#add-to-schedule {
+	background-color:#eee;
+}
+
+#schedule-preview .editable *{
+	pointer-events:none;
+}
+
+#schedule-preview .editable {
+	transition: all .05s ease-out;		
+	overflow:hidden;
+	cursor:pointer;	
+}
+#schedule-preview .editable:hover {
+	background-color:#efefef; 
+	transition: all .05s ease-out;
+	-webkit-box-shadow:inset 0 0 10px 3px rgba(0,0,0,.07);
+	box-shadow:inset 0 0 10px 3px rgba(0,0,0,.07);
+}
+
+#schedule-preview .editable:after {
+	content:"Edit";
+	width:70px;
+	text-align: center;
+	font-size:16px;
+	font-weight:400;
+	border-radius:3px;
+	position:absolute;
+	right:0;
+	left:0;
+	margin:auto;
+	top:50%;
+	transform: translateY(-50%);
+	color:#999;
+	background-color: #fff;
+	padding:10px 15px 10px 15px;
+	opacity:0;
+	transition: all .05s ease-out;
+	z-index:2;
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,.1);	
+}
+
+#schedule-preview .editable:hover:after {
+	opacity:1;
+	transition: all .05s ease-out;			
+}
+
+#add-to-schedule .row {
+	margin-top:0;	
+}
+
+#add-to-schedule .item-to-add{
+	width:100%;
+	height: 40px;
+	background-color: #333;
+	color:white;
+	border-radius:4px;
+	text-align: center;
+	padding-top:9px;
+	box-sizing: border-box;
+	cursor:pointer;
+}
+
+#add-to-schedule .item-to-add .zmdi {
+	margin-bottom:-5px !important;	
+	display:inline-block;
+	margin-left:-10px;
+}
+
+#add-to-schedule .item-to-add:hover {
+	background-color:#666;
+}
+
+.panelsection.focus {
+/* 	outline: 4px dashed #47EDFF;
+	outline-offset: -4px; */
+}

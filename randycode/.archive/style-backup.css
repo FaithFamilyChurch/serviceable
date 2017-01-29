@@ -1,0 +1,287 @@
+body, html {
+  margin:0;
+  font-family:'Source Sans Pro', sans-serif;
+  cursor:default;
+  height:100%;
+  width:100%;
+}
+
+.headerBar {
+  width:100%; 
+  height:50px;
+  background-color:#111;
+  color:#fff;
+  position:fixed;
+  top:0;
+  box-shadow:0 3px 2px 0 rgba(0,0,0,.2);
+}
+
+.logo {
+  font-size:35px;
+  margin-left:10px; 
+  line-height:48px;
+  pointer-events:none;
+  position:absolute; 
+  left:1px;
+  transition:all .3s ease-in-out;
+}
+
+.menu {
+  position:absolute; 
+  left:205px;
+  top:0;
+  height:100%;
+  width:auto;
+  padding-right:15px;
+  
+}
+
+.menu a {
+  height:30px; 
+  margin-top:10px;
+  width:auto;
+  padding:0 15px 0 18px;
+  cursor:pointer;
+  line-height:30px;
+  float:left;
+  display:block;
+  border-radius:20px;
+  transition:all 0s ease-in-out;
+  margin-right:-3px;
+	text-transform:uppercase;
+}
+
+.menu a:hover {  
+  background-color:rgba(255,255,255,.1);
+}
+
+.menu a:hover .dropdownTriangle {
+  border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #fff;
+}
+
+.menu .dropdownTriangle {
+  display:inline-block; 
+  margin-left:8px; 
+  padding-bottom:3px;
+}
+
+.userAccountHeaderBar {
+  height:30px; 
+  width:auto;
+  position:absolute;
+  right:5px;
+  top:10px;
+  line-height:30px;  
+  padding-left:13px;
+  padding-right:72px;
+  text-align:right;
+  transition:all 0s ease-in-out;
+  z-index:3.5;
+  cursor:pointer;
+  border-radius:20px;
+}
+
+.userAccountHeaderBar:hover {
+  background-color:rgba(255,255,255,.1);
+}
+
+.userAccountHeaderBar:hover .avatar{
+/*  -webkite-transform:scale(1.2);
+  transform:scale(1.2);
+  border:1px solid #fff;
+  box-shadow:0 2px 2px 0 rgba(0,0,0,.4);
+  background-size:200%; */
+}
+
+.userAccountHeaderBar span {color:#999; padding-left:3px;}
+
+.avatar {
+  width:36px;
+  height:36px;
+  position:absolute;
+  right:27px; top:-3px;
+  border-radius:20px;
+  background-image:url(https://scontent-iad3-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/305217_2183780485663_6866767_n.jpg?oh=72e9f34c3d5046e15ae85eb48c8c9ecc&oe=57961771);
+  background-size:cover;
+  background-position:center;
+  transition:all .2s ease-in-out;
+}
+
+.dropdownTriangle {
+  width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #444;
+}
+
+.userAccountHeaderBar .dropdownTriangle {
+  position:absolute; 
+  right:10px;
+  top:13px;
+}
+
+.userAccountHeaderBar:hover .dropdownTriangle {
+  border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #fff;
+}
+
+/* --------------------------------------------------------- */
+
+.workspace {
+  width:100%;
+  height:100%;
+  -webkit-box-shadow:inset 0 0 1000px 0 rgba(0,0,0,.2);
+  box-shadow:inset 0 0 1000px 0 rgba(0,0,0,.2); 
+  background-color:#efefef;
+  z-index:2;
+}
+
+.panel1, .panel2, .panel3, .panel4 {
+  border-radius:4px;
+  -webkit-border-radius:4px;
+}
+
+.panelHeader {
+  width:calc(100% - 12px);
+  height:27px;
+  position:absolute;
+  top:-1px;
+  background-color:#999;
+  color:white;
+  padding-top:8px;
+  padding-left:12px;
+	text-transform:uppercase;
+	border-radius:4px 4px 0 0;
+	-webkit-border-radius:4px 4px 0 0;
+}
+
+.panel1 .panelHeader {background-color:#C69824;}
+.panel2 .panelHeader {background-color:#2E548A;}
+.panel3 .panelHeader {background-color:#6A9532;}
+.panel4 .panelHeader {background-color:#5A297A;}
+
+.panel1 {
+  width:calc(100% - 50px);
+  position:absolute;
+  left:25px;
+  top:75px;
+  background-color:white;
+  height:calc(50% - 75px);
+  box-shadow:0 2px 12px 0 rgba(0,0,0,.2);
+	color:#666;
+}
+
+.panel2 {
+  width:calc(33.333% - 33.3px);
+  position:absolute;
+  left:25px;
+  bottom:40px;
+  background-color:white;
+  height:calc(50% - 65px);
+  box-shadow:0 2px 12px 0 rgba(0,0,0,.2);
+}
+
+.panel3 {
+  width:calc(33.333% - 33.3px);
+  position:absolute;
+  left:calc(33.333% + 16.666px);
+  bottom:40px;
+  background-color:white;
+  height:calc(50% - 65px);
+  box-shadow:0 2px 12px 0 rgba(0,0,0,.2);
+}
+
+.panel4 {
+  width:calc(33.333% - 33.3px);
+  position:absolute;
+  right:25px;
+  bottom:40px;
+  background-color:white;
+  height:calc(50% - 65px);
+  box-shadow:0 2px 12px 0 rgba(0,0,0,.2);
+}
+
+.dateSelectionComingUp {
+	font-size:30px;
+	font-weight:lighter; 
+	position:absolute;
+	text-transform:none;
+	color:#666;
+	top:45px;
+	left:20px;
+}
+
+.dateSelectionComingUp:hover {
+	background-color:rgba(255,255,255,.2);
+}
+
+.dateSelectionComingUp a{
+	pointer-events:none;
+}
+
+.dateSelectionComingUp .dropdownTriangle {
+	display:inline-block;
+	padding-bottom:6px;
+	margin-left:7px;
+	top:0;
+}
+
+.comingUpTeamSection {
+	width:45%; font-size:14px;
+	position:absolute;
+	left:20px;
+	top:90px;
+	list-style:none;
+	height:200px;
+
+}
+
+.comingUpTeamSectionTitle {
+	text-transform:uppercase;
+	border-bottom:1px solid #ccc;
+	padding-bottom:3px;
+	margin-bottom:8px;
+	display:block;
+	width:100%;
+	font-size:17px;
+	text-align:left;
+}
+
+.comingUpTeamSection span {
+	font-weight:bold; padding-right:5px; text-align:left; display:inline-block; float:left;
+}
+
+.comingUpTeamSection a {
+	display:inline-block;
+	position:absolute;
+	left:100px;
+}
+
+.twoColumns {
+	-webkit-column-count:2;
+	column-count:2;
+	-webkit-column-gap:10px;
+	column-gap:10px;
+	height:200px;
+	float:left;
+}
+
+
+/* --------------------------------------------------------- */
+
+.footerBar {
+  height:12px; 
+  width:100%;
+  position:fixed;
+  bottom:15px;
+  font-size:12px;
+  color:#888;
+  text-align:center;
+  
+}
+
+

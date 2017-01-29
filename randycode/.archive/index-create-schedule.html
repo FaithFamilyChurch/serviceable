@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="description" content="">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="actions.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+	<div class="headerBar">
+		<div class="logo">
+			SERVICE<span style="letter-spacing:-2px;">ABLE</span>
+		</div>
+
+		<div class="menu">
+			<a>Songs<div class="dropdownTriangle"></div></a>
+			<a>Schedules<div class="dropdownTriangle"></div></a>
+			<a>Members<div class="dropdownTriangle"></div></a>
+			<a>Tools<div class="dropdownTriangle"></div></a>
+		</div>
+		
+	</div>
+
+	<div class="news-icon">
+		<i class="zmdi zmdi-rss zmdi-hc-lg"></i>
+	</div>
+
+	<div class="chat-notification-icon">
+		<i class="zmdi zmdi-comment-text zmdi-hc-lg"></i>
+		<div class="count">
+			14
+		</div>
+	</div>	
+	
+	<div class="userAccountHeaderBar">
+		Welcome <span>Randy</span>
+		<div class="avatar">
+		</div>
+		<div class="dropdownTriangle"></div>
+	</div>
+	
+	<div class="workspace one wide">
+		<div class="panel1 create-schedule">
+			<div class="panelHeader"><strong><i class="zmdi zmdi-assignment" style="font-size:18px; margin-right:10px;"></i>Sunday, April 4th, 2016 <i class="zmdi zmdi-caret-down zmdi-hc-lg"></i></strong>
+				<div class="panelHeaderActionIcon">
+					<i class="zmdi zmdi-more-horiz"></i>
+				</div>
+			</div>
+			<div class="leftColumn">
+				<div class="songTable">
+					<div class="panelSectionTitle">Songs</div>
+					<table>
+						<tr style="height:30px;">
+							<td></td>
+							<td>Listen</td>
+							<td>Print</td>
+							<td>Key</td>
+							<td>Open</td>
+						</tr>
+						<tr>
+							<td>1. <songName>Everlasting God</songName><i class="zmdi zmdi-caret-down zmdi-hc-lg inline-action-icon"></i> <i class="zmdi zmdi-delete zmdi-hc-lg inline-action-icon"></i></td>
+							<td><i class="zmdi zmdi-youtube-play zmdi-hc-lg"></i></td>
+							<td><i class="zmdi zmdi-print zmdi-hc-lg"></i></td>
+							<td>A</td>
+							<td><i class="zmdi zmdi-local-library zmdi-hc-lg"></i></td>
+						</tr>
+						<tr>
+							<td>2. <songName>Rock of Ages</songName></td>
+							<td><i class="zmdi zmdi-youtube-play zmdi-hc-lg"></i></td>
+							<td><i class="zmdi zmdi-print zmdi-hc-lg"></i></td>
+							<td>Eb</td>
+							<td><i class="zmdi zmdi-local-library zmdi-hc-lg"></i></td>
+						</tr>		
+						<tr>
+							<td>3. <songName>Your Name</songName></td>
+							<td><i class="zmdi zmdi-youtube-play zmdi-hc-lg"></i></td>
+							<td><i class="zmdi zmdi-print zmdi-hc-lg"></i></td>
+							<td>G</td>
+							<td><i class="zmdi zmdi-local-library zmdi-hc-lg"></i></td>
+						</tr>			
+						<tr>
+							<td>4. <blank>(none selected) Make a suggestion</blank></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>		
+						<tr>
+							<td><i class="zmdi zmdi-plus zmdi-hc-lg inline-action-icon"></i>Add an item...</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>						
+					</table>
+				</div>
+
+			
+				<div class="participantsList">
+					<div class="panelSectionTitle">Participants</div>
+					<div class="participantColumn1">
+						<li><role>Lead</role><user>Randy</user></li>
+						<li><role>Singers</role><user>Randy</user><user>Judy</user><user>Grace</user></li>
+						<li><role>Electric Guitar</role><user>Tim</user></li>
+						<li><role>Bass Guitar</role><user>Skip</user></li>
+						<li><role>Drums</role><user>Denny</user></li>
+						<li><role>Trumpet</role><user>Ken</user></li>
+					</div>
+					<div class="participantColumn2">
+						<li><role>Speaker</role><user>Paul</user></li>
+						<li><role>Sound</role><user>Jason</user></li>
+						<li><role>Song Slides</role><user>Paul</user></li>
+						<li><role>Sermon Slides</role><user>Tim</user></li>
+
+					</div>
+				</div>
+				<div class="orderOfService">
+					<div class="panelSectionTitle">Order of Sunday Services</div>
+
+					<li><time>7:30am</time>Practice prep</li>
+					<li><time>7:45am</time>Worship practice</li>
+					<li><time>8:10am</time>Choir practice</li>
+					<li><time>8:25am</time>Countdown begins</li>
+					<li><time>8:30am</time>Invocation: <user>Paul</user></li>
+					<li><time>8:33am</time>Worship Set</li>
+					<note>Mics for <user>Judy</user> <user>Grace</user> and <user>Randy</user></note>					
+					<li><time>8:48am</time>Choir Song: <choirsong>When It's All Been Said and Done</choirsong></li>
+						<note><user>Daryl</user> will need a mic for his solo. CD1 Track 24</note>
+					<li><time>8:53am</time>Welcome / Announcments</li>
+					<li><time>8:57am</time>Special Music</li>
+					<li><time>9:05am</time>Sermon</li>
+					<li><time>9:50am</time>Prayer and Offering</li>
+					<li><time>9:55am</time>Faith Family Cafe opens</li>
+					<li><time>10:00am</time>Sunday School and Adult Discipleship begin</li>
+					<li><time>11:10am</time>Countdown begins</li>
+					<li><time>11:15am</time>Invocation: <user>Paul</user></li>
+					<li><time>11:18am</time>Worship Set</li>
+					<li><time>11:32am</time>Choir Song: <choirsong>When It's All Been Said and Done</choirsong></li>
+					<li><time>11:37am</time>Welcome / Announcments</li>
+					<li><time>11:42am</time>Special Music</li>
+					<li><time>11:50am</time>Sermon</li>
+					<li><time>12:35am</time>Prayer and Offering</li>
+					<li><time>12:38am</time>Church Dismissed</li>
+				</div>				
+			</div>
+		</div>
+<!-- 		<div class="panel2">
+			<div class="leftColumn">
+				<div class="panelSectionTitle">News</div>
+				
+			</div>
+			<div class="rightColumn">
+				<div class="panelSectionTitle">Recent Songs</div>
+			</div>
+		</div>
+		
+		<div class="panel3">
+			<div class="panelSectionTitle">Page Name</div>
+		</div> -->
+			
+		<div class="footerBar">
+			Licensed to Faith Family Church, CCLI #2247858
+		</div>
+	</div>
+
+	<div class="right-sidebar hidden">
+		
+	</div>
+
+
+</body>
+
+</html>
