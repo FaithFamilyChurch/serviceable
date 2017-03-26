@@ -5,6 +5,30 @@ label.normal {
 	font-weight:400 !important; 
 }
 
+.label-edit-hover-show {
+	color:#CCC;
+	padding:8px;
+	margin-top:-8px;
+	margin-bottom:-8px;
+	display:inline-block;
+	padding:0 8px;	
+}
+
+.label-edit-hover-show .caption {
+	font-size:12px;
+	color:#999;
+	opacity:0;
+	font-weight:400;
+}
+
+.panelSectionTitle.edit-hover:hover .edit-label-icon {
+	color:#555;
+}
+
+.panelSectionTitle.edit-hover:hover .caption {opacity:1;}
+
+.panelSectionTitle.edit-hover {width:auto; cursor:pointer;}
+
 span.inputbox {
 	overflow-x:hidden;
 	display:block;
@@ -147,5 +171,88 @@ button.dropdown:after {
 }
 
 .disabled input {
-	background-color:#efefef; color:#aaa; pointer-events:none;
+	background-color:#efefef; pointer-events:none;
 }
+
+/* Row and Column Attributes */
+
+.row {
+	width:100%;
+	height:auto;
+	float:right;
+	margin-bottom:14px;
+	margin-top:10px;
+}
+
+.row.thin {
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+.row.verythin {
+	margin-bottom: 0;
+	margin-top: 0px;
+}
+
+.row.thin.header span {
+	padding-left:4px;
+}
+
+.col {	
+	box-sizing:border-box;
+	padding-left:20px;
+}
+
+.col.float {float:left;}
+
+.col-5 { width:5%;}
+
+.col-10 {	width:10%;}
+
+.col-15 {	width:15%;}
+
+.col-20 {	width:20%;}
+
+.col-25 {	width:25%;}
+
+.col-30 {	width:30%;}
+
+.col-33 {	width:33.333%; padding-right:10px;}
+
+.col-33:nth-child(3)  {padding-right:0;}
+
+.col-35 {	width:35%;}
+
+.col-40 { width:40%;}
+
+.col-45 { width:45%;}
+
+.col-50 { width:50%;}
+
+.col-55 { width:55%;}
+
+.col-60 { width:60%;}
+
+.col-65 { width:65%;}
+
+.col-66 {	width:66.666%;}
+
+.col-70 { width:70%;}
+
+.col-75 { width:75%;}
+
+.col-80 { width:80%;}
+
+.col-85 { width:85%;}
+
+.col-90 { width:90%;}
+
+.col-95 { width:95%;}
+
+.col-100 { width:100%; padding-left:0 !important;}
+
+.col.nopad { padding-left:0 !important;}
+
+.col.smallpad { padding-left:10px;}
+
+.col:first-of-type { padding-left:0px;} 

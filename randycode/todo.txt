@@ -1,0 +1,14 @@
+
+
+TODO:
+
+
+
+COMPLETE:
+
+
+
+NOTES:
+
+- Modal style for the adding / editing pages is better than the slide in docked style. I'd say use modal unless you absolutely have to the content it would otherwise be hiding.
+

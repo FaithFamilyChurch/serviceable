@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+  $(document).keyup(function(e) {
+       if (e.keyCode == 27) { // escape key maps to keycode `27`
+          $('.panel').removeClass('fullscreen');
+          $('.top-bar-area').removeClass('hide');
+          $('.headerBar').removeClass('hide');
+      }
+  });  
+  
   $('.hide-news').click(function(){
     $('.news-notifications').toggleClass('hide');
     $('.this-week-schedule').toggleClass('news-hidden');
@@ -13,7 +21,39 @@ $(document).ready(function(){
   });  
   
   $('.chat-notification-icon').click(function(){
-    $('.chat-overlay').toggleClass('hidden');
+    $('.chat-overlay').toggleClass('invisible');
+    $('.chat-notification-icon').toggleClass('open');
+  });
+  
+  $('.panel-fullscreen').click(function(){
+    $(this).closest('.panel').toggleClass('fullscreen');
+    $('.top-bar-area').toggleClass('hide');
+    $('.headerBar').toggleClass('hide');
+  }); 
+  
+  $('.orderOfService .event').mouseup(function(){
+    $('.orderOfService .event').removeClass('track-this');
+    $(this).addClass('track-this');
+  });  
+  
+  $('.toggle-oos-important').click(function(){
+    $(this).toggleClass('fade');
+    $('.important').toggleClass('hide');
+  });  
+  
+  $('.toggle-oos-bookmark').click(function(){
+    $(this).toggleClass('fade');
+    $('.bookmark').toggleClass('hide');
+  });  
+  
+  $('.toggle-oos-sound').click(function(){
+    $(this).toggleClass('fade');
+    $('.sound').toggleClass('hide');
+  });  
+  
+  $('.toggle-oos-lights').click(function(){
+    $(this).toggleClass('fade');
+    $('.lights').toggleClass('hide');
   });
   
   $('.menu a').click(function(){
@@ -40,6 +80,11 @@ $(document).ready(function(){
     $('.modal-overlay').addClass("show");
   }); 
   
+  $('.panelsection-edit-participants').click(function(){
+    $('.add-edit-participants').addClass("show");
+    $('.modal-overlay').addClass("show");
+  }); 
+  
   $('.panelsection-order-of-service').click(function(){
     $('.add-order-of-service').addClass("show");
   });    
@@ -57,6 +102,8 @@ $(document).ready(function(){
     $('.top-bar-area').toggleClass("menuBarCollapsed");
     $('.headerBarLock i').toggleClass("zmdi-lock-open");
     $('.headerBarLock i').toggleClass("zmdi-lock");
+    $('.top-bar-area').toggleClass("menuBarCollapsed");
+    $('.chat-overlay').toggleClass("collapsed-menu");
   });     
   
   $('.headerBar').dblclick(function(){
@@ -64,7 +111,7 @@ $(document).ready(function(){
     $('.workspace').toggleClass("menuBarCollapsed");
     $('.top-bar-area').toggleClass("menuBarCollapsed");
     $('.headerBarLock i').toggleClass("zmdi-lock-open");
-    $('.headerBarLock i').toggleClass("zmdi-lock");
+    $('.chat-overlay').toggleClass("collapsed-menu");
   });  
   
 //   Textarea Resize

@@ -9,9 +9,11 @@ body, html {
 
 div { box-sizing: border-box; }
 
-.hide {
-	display:none;	
+.hide, .hidden {
+	display:none !important;	
 }
+
+.invisible {opacity:0; pointer-events:none;}
 
 .pull-right {
 	float:right !important;
@@ -28,12 +30,11 @@ div { box-sizing: border-box; }
 	display:block !important;
 }
 
+.fade, .disabled {opacity:.75}
 
 .zmdi.action-icon {font-size:22px !important; cursor:pointer;}
 .zmdi.action-icon.fade-on-hover {opacity:.3}
 .zmdi.action-icon.fade-on-hover:hover {opacity:1}
-
-
 
 @media screen and ( max-height: 900px ){
     

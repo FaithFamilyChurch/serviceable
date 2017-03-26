@@ -1,0 +1,26 @@
+.workspace {
+  width:calc(100% - 220px);
+  height:100%;
+  z-index:2;
+	position:absolute;
+	transition:all .3s ease;
+	top:0;
+	left:220px;
+	padding:40px 60px;
+	max-width: 2000px;
+	right: 0;
+	margin: auto;
+}
+
+.workspace.show-top-bar {height:calc(100% - 10px); top:10px;}
+
+.workspace.show-bottom-bar {height:calc(100% - 40px); bottom:40px;}
+
+.workspace.show-top-bar.show-bottom-bar {
+	height:calc(100% - 50px);
+}
+
+.workspace.menuBarCollapsed {
+	width:calc(100% - 40px);
+	left:40px;
+}

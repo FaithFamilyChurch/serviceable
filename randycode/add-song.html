@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title></title>
+	<meta name="description" content="">
+	<link href="css/addSchedule.css" rel="stylesheet" type="text/css">
+	<link href="css/forms.css" rel="stylesheet" type="text/css">
+	<link href="css/global.css" rel="stylesheet" type="text/css">
+	<link href="css/keyframes.css" rel="stylesheet" type="text/css">
+	<link href="css/menu.css" rel="stylesheet" type="text/css">
+	<link href="css/overlays.css" rel="stylesheet" type="text/css">
+	<link href="css/topBar.css" rel="stylesheet" type="text/css">
+	<link href="css/footerBar.css" rel="stylesheet" type="text/css">
+	<link href="css/panels.css" rel="stylesheet" type="text/css">
+	<link href="css/layout.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="script/actions.js" type="text/javascript"></script>
+</head>
+
+<body>
+	
+<!--#include virtual="includes/menu-bar.shtml" --> 
+		
+	<div class="workspace one wide">
+		
+		<div class="panel full-page-panel footer" id="add-song">
+			<div class="panelHeader inverse">
+				<span class="label">
+					<i class="zmdi zmdi-plus" style="font-size:18px; margin-right:10px;"></i>
+					Add song
+				</span>
+<!-- 				<div class="panelHeaderActionIcon">
+					<i class="zmdi zmdi-more"></i>
+				</div> -->
+			</div>
+			<div class="scroll-section">
+				
+				<div class="panelsection">
+					<div class="panelSectionTitle">Metadata</div>
+					<div class="row thin">
+						<div class="col col-10 float">
+							<label class="normal">Song Name</label> 
+						</div>
+						<div class="col col-60 float">
+							<span class="inputbox"><input type="text" name="songName" placeholder="Enter a song name here" id="songName" /></span>
+						</div>
+						<div class="col col-30 float">
+							<label class="normal">Author</label> 
+							<span class="inputbox"><input type="text" name="songAuthor" id="songAuthor" /></span>
+						</div>
+					</div>
+					<div class="row thin">
+						<div class="col col-10 float">
+							<label class="normal">Song Key</label> 
+						</div>
+						<div class="col col-20 float">
+							<span class="inputbox dropdown"><input type="text" name="songKey" placeholder="" id="songKey"/></span>
+						</div>
+						<button class="dropdown">
+						Add
+						</button>
+					</div>
+				</div>
+				
+				<div class="panelsection">
+					<div class="panelSectionTitle">Media</div>
+					<div class="row thin">
+						<div class="col col-10 float">
+							<label class="normal">Youtube URL</label> 
+						</div>
+						<div class="col col-70 float">
+							<span class="inputbox"><input type="text" name="songYoutubeLink" placeholder="Paste Youtube video URL here..." id="songYoutubeLink" /></span>
+						</div>
+						<div class="col col-20 float">
+							<label class="normal">Youtube Key</label> 
+							<span class="inputbox dropdown"><input type="text" name="youtubeKey" placeholder="" id="youtubeKey"/></span>
+						</div>
+					</div>
+					<div class="row thin">
+						<div class="col col-50 float">
+							<label class="normal">Song Lyrics</label> 
+							<textarea type="text" name="songLyrics" placeholder="Paste song lyrics here..." id="songLyrics" data-autoresize row thins="2"></textarea>
+						</div>
+						<div class="col col-50 float">
+							<label class="normal">Comments</label> 
+							<textarea type="text" name="songComments" placeholder="" id="songComments" data-autoresize row thins="2"></textarea>
+						</div>						
+					</div>
+				</div>
+				
+				<div class="panelsection">
+					<div class="panelSectionTitle">Sheetmusic</div>
+					<div class="row thin">
+						<div class="col col-33 float">
+							<button class="dropdown">
+							Add
+							</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="panel-footer">
+				<div class="panelActionButtons">
+					<button>
+						Cancel
+					</button>
+					<button class="primary">
+						Add Song
+					</button>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<div class="right-sidebar hidden"></div>
+	
+	<div class="loading-overlay"></div>
+	<div class="loader">Loading...</div>
+	<div class="loader2">Loading...</div>
+	<div class="test-button test-loading-toggle">
+		Test Loading
+	</div>
+</body>
+
+</html>
