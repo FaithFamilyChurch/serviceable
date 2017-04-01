@@ -1,0 +1,187 @@
+/* Modal Overlay CSS */
+
+.modal-overlay {
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	opacity:.98;
+	z-index:5;
+	transition: opacity .4s ease-out;
+}
+
+.subPanel.modal, .modal-overlay {
+	top:-2000px;
+	opacity:0;
+	pointer-events:none;
+}
+
+.subPanel.modal.show {
+	top:0;
+	opacity:1;
+	pointer-events:all;
+	transition: opacity .4s ease-out;
+}
+
+.modal-overlay.show {
+	top:0;
+	opacity:.98;
+	pointer-events:all;
+}
+
+/* Loading Overlay CSS */
+
+.loading-overlay {
+	width:100%;
+	height:100%;
+	z-index:6;
+	position:fixed;
+	background: #FF512F; /* fallback */
+  background: -webkit-linear-gradient(to left, #FF512F , #DD2476); 
+  background: linear-gradient(to left, #FF512F , #DD2476); 
+	opacity:.97;
+	display:none;
+}
+
+.loading-overlay:after {
+	content:"Loading...";
+	position:absolute;
+	margin:auto;
+	right:20px;
+	bottom:20px;
+	font-size:20px;
+	font-weight:200;
+	color:white;
+	opacity:1;
+}
+
+
+.loader {
+	z-index:51;
+  margin: 60px auto;
+  font-size: 10px;
+  position: absolute;
+	left:0; right:0;
+	top:calc(50% - 70px);
+	margin:auto;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 1);
+  border-right: 1.1em solid rgba(255, 255, 255, 1);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0);
+  border-left: 1.1em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.155s infinite linear;
+  animation: load8 1.155s infinite linear;
+	opacity:.4;
+	display:none;		
+}
+
+.loader2 {
+	z-index:51;
+  margin: 65px auto;
+  font-size: 7px;
+  position: absolute;
+	left:0; right:0;
+	top:calc(50% - 55px);
+	margin:auto;
+  text-indent: -9999em;
+  border-top: 1.7em solid rgba(255, 255, 255, 1);
+  border-right: 1.7em solid rgba(255, 255, 255, 1);
+  border-bottom: 1.7em solid rgba(255, 255, 255, 0);
+  border-left: 1.7em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+	opacity:.7;
+	display:none;
+}
+
+.loader,
+.loader:after,
+.loader2,
+.loader2:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.test-button {
+	display:none;
+	background-color:rgba(230,230,230,.3);
+	opacity:0;
+	color:white;
+	font-size:16px;
+	position:absolute;
+	padding:10px 15px;
+	border-radius:3px;
+	left:20px;
+	bottom:90px;
+	z-index:6;
+	font-weight:300;
+	cursor:pointer;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */ 
+}
+
+.test-button:hover {
+	background-color:rgba(230,230,230,.7);
+	opacity:1;
+}
+
+.loading-overlay, body, .modal-overlay {
+
+background: linear-gradient(90deg, #329fb7, #63ce75, #c5d955, #eec33d, #db6483, #7e3ca3, #329fb7, #63ce75, #c5d955, #eec33d, #db6483, #7e3ca3);
+background-size: 1500% 1500%;
+
+-webkit-animation: FadeBGTest 240s linear infinite;
+-moz-animation: FadeBGTest 240s linear infinite;
+animation: FadeBGTest 240s linear infinite;
+
+}
+	
+@-webkit-keyframes FadeBGTest {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
+@-moz-keyframes FadeBGTest {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
+@keyframes FadeBGTest { 
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
+
+.loading-overlay.greyBG, body.greyBG, .modal-overlay.greyBG {
+	background:#A2A5C7;;
+}

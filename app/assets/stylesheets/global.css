@@ -1,0 +1,50 @@
+body, html {
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+  cursor:default;
+  height:100%;
+  width:100%;
+	overflow:hidden;
+}
+
+div { box-sizing: border-box; }
+
+.hide, .hidden {
+	display:none !important;	
+}
+
+.invisible {opacity:0; pointer-events:none;}
+
+.pull-right {
+	float:right !important;
+}
+
+.pull-left {
+	float:left !important;
+}
+
+.pull-center {
+	margin-left:auto !important;
+	margin-right:auto !important;
+	float:none !important;
+	display:block !important;
+}
+
+.fade, .disabled {opacity:.75}
+
+.zmdi.action-icon {font-size:22px !important; cursor:pointer;}
+.zmdi.action-icon.fade-on-hover {opacity:.3}
+.zmdi.action-icon.fade-on-hover:hover {opacity:1}
+
+@media screen and ( max-height: 900px ){
+    
+	.menu a, .menu sub a {
+		font-size:12px;
+		height:18px;
+	}
+	
+}
+
+:root {
+  --theme-1-color: #2BC0E4;
+}

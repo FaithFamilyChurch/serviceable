@@ -13,9 +13,10 @@
 // require jquery
 //= require jquery311
 //= require jquery.turbolinks
+//= require jquery_ujs
 //= require moment
 //= require fusionlib
 //= require turbolinks
 //= require serviceable
-//= require jquery_ujs
+//= require actions
 // require_tree .

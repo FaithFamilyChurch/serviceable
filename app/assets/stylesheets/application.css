@@ -10,8 +10,20 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require style
+ *= require addSchedule
+ *= require footerBar
+ *= require forms
+ *= require global
+ *= require keyframes
+ *= require material-design-iconic-font.min
+ *= require menu
+ *= require overlays
+ *= require panels
+ *= require song-table
+ *= require topBar
  *= require fusionlib
+ * require perfect-scrollbar
+ * require style
  * require_tree .
  * require_self
  */

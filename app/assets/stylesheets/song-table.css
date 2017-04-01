@@ -1,0 +1,37 @@
+#song_table {
+  border-spacing: 0;
+}
+
+#song_table th{
+  border-bottom: 1px solid #ddd;
+  margin-bottom:20px;
+  font-weight:normal;
+}
+
+#song_table td {
+  padding-top:7px;    
+  padding-bottom:5px;
+  border-bottom: 1px solid #ddd;
+}
+
+#song_table th:nth-child(1), #song_table td:nth-child(1), #song_table th:nth-child(2), #song_table td:nth-child(2) {
+  text-align:left;  
+}
+
+#song_table th:nth-child(3), #song_table td:nth-child(3) {
+  width:70px; 
+}
+
+#song_table th:nth-child(4), #song_table td:nth-child(4) {
+  width:70px; 
+}
+
+#song_table th:nth-child(5), #song_table td:nth-child(5), #song_table th:nth-child(6), #song_table td:nth-child(6), #song_table th:nth-child(7), #song_table td:nth-child(7) {
+  width:140px; 
+  text-align: center;
+}
+
+#song_table a {
+  text-decoration:none;
+  color: #337ab7;
+}
