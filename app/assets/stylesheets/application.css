@@ -21,6 +21,7 @@
  *= require panels
  *= require song-table
  *= require topBar
+ *= require layout
  *= require fusionlib
  * require perfect-scrollbar
  * require style
